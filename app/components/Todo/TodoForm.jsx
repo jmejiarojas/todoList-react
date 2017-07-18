@@ -42,8 +42,11 @@ class TodoForm extends Component{
 
         if(validateInput){
             this.setState({error : validateInput})
+            return
         }
 
+        this.props.createTask(task)
+        this.setState( { error : null })
         this.inputText.value = ''
         
     }

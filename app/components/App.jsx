@@ -18,7 +18,10 @@ class App extends Component{
             
             <div>
                 <h1>Todo List con React</h1>
-                <TodoForm todos = {this.state.todos}/>
+                <TodoForm 
+                    todos = {this.state.todos}
+                    createTask = { this.createTask.bind(this) }
+                />
                 <TodoList todos={this.state.todos}/>
             </div>
         )
@@ -26,7 +29,13 @@ class App extends Component{
 
     //Estos son metodos propios que vamos a utilizar
     createTask(task){
-
+        this.state.todos.push({
+            task,
+            isCompleted: false
+        })
+        this.setState({
+            todos: this.state.todos
+        })
     }
 
     toggleTask(task){
