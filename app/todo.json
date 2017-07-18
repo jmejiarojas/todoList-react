@@ -1,0 +1,24 @@
+{
+    "todos": [
+        {
+            "task": "Hacer la tarea de gestion TI",
+            "isCompleted" : true    
+        },
+        {
+            "task": "Pasear al perro en la playa",
+             "isCompleted" : false
+        },
+        {
+            "task": "Salir al cine con los amigos",
+             "isCompleted" : true
+        },
+        {
+            "task": "Prcaticar Spring con JPa",
+             "isCompleted" : false
+        },
+        {
+            "task": "Mejorar el proyecto de C sharp",
+             "isCompleted" : false
+        }
+    ]
+}
